@@ -1,5 +1,5 @@
-from flask import Flask
+from flask import Flask
 
-app = Flask(__name__)
+app = Flask(__name__)
 
-from hmscapp import views
+from hmscapp import views
