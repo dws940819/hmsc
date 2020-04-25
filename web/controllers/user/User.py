@@ -24,9 +24,7 @@ def login():
     }
     req = request.values
     login_name = req['login_name'] if 'login_name' in req else ''
-    print(999,login_name)
     login_pwd = req['login_pwd'] if 'login_pwd' in req else ''
-    print(888,login_pwd)
 
     if login_name is None or len(login_name) < 1:
         resp['code'] = -1
@@ -72,12 +70,12 @@ def logout():
 
 @router_user.route('/edit')
 def edit():
-    return '编辑'
+    return ops_render("user/edit.html")
 
 
 @router_user.route('/reset-pwd')
 def resetPwd():
-    return '重置密码'
+    return ops_render("user/reset_pwd.html")
 
 
 
