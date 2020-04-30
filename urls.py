@@ -17,7 +17,7 @@ app.register_blueprint(router_goods,url_prefix="/goods")
 app.register_blueprint(route_index,url_prefix="/")
 app.register_blueprint(router_member,url_prefix="/member")
 app.register_blueprint(router_account,url_prefix="/account")  
-app.register_blueprint(router_account,url_prefix='/upload')
+app.register_blueprint(router_upload,url_prefix="/upload")
 
 
 
